@@ -1,0 +1,5 @@
+#!/bin/bash
+set -e
+
+cat boot.scm lib.scm $2 $1 >out.scm
+scheme brown.scm <out.scm
