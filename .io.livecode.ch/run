@@ -1,5 +1,5 @@
 #!/bin/bash
 set -e
 
-cat boot.scm lib.brn $2 $1 >out.scm
-scheme brown.scm <out.scm
+cat lib.brn $2 $1 >out.brn
+scheme brown.scm boot.scm <out.brn

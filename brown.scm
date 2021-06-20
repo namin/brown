@@ -95,8 +95,11 @@
        (lambda (cell)
          (let ([v (deref-cell cell)])
            (if (eq? v 'UNASSIGNED)
-               (wrong
-                (list "Brown: unbound id" e))
+               ;; added eof logic for batch mode
+               (if (not (eq? e #!eof))
+                   (wrong
+                    (list "Brown: unbound id" e))
+                   (lambda (x) x))
                (k v)))))))
 
 (define denotation-of-application
@@ -265,5 +268,4 @@
                  (set! initcells
                        (cons c initcells))
                  (k c))))))))
-
 
