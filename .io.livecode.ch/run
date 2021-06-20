@@ -2,4 +2,4 @@
 set -e
 
 cat lib.brn $2 $1 >out.brn
-scheme brown.scm boot.scm <out.brn | tail -n +3
+scheme brown.scm boot.scm <out.brn | tail -n +12
