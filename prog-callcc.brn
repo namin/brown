@@ -1,0 +1,21 @@
+(call/cc
+ (lambda (k)
+   (cons (k '2) (k '3))))
+(exit 'foo)
+(exit 'bar)
+
+(set! strange
+  (lambda ()
+    (new-call/cc
+     (lambda (k) (set! new-k k)))))
+
+(strange)
+(new-k '1)
+
+(new-call/cc
+ (lambda (k)
+   (cons (k '2) (k '3))))
+(exit 'foo)
+(exit 'bar)
+
+(new-k '2)
