@@ -1,6 +1,7 @@
 ;; The Mystery of the Tower Revealed:
 ;; A Non-Reflective Description of the Reflective Tower
 ;; Mitchell Wand & Daniel P. Friedman
+;; 1986
 
 
 ;; Appendix

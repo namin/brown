@@ -1,6 +1,11 @@
 # Brown
+
 the reflective tower Brown by Mitch Wand and Dan Friedman
 from the 1986 paper _"The mystery of the tower revealed: A non-reflective description of the reflective tower"_
+
+the earlier, non-towery, Brown by Dan Friedman and Mitch Wand
+from the 1984 paper _"Reification: Reflection without Metaphysics"_
+is available as an independent file [brown84.scm](brown84.scm)
 
 ## Getting Started
 ```scheme
